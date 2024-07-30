@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>SuperMarket  Management</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/css/bootstrap.css"/>
+</head>
+<body>
+	<header>
+		 <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">SuperMarket Management</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active" aria-current="page" href="/home/index">Home</a>
+                <a class="nav-link" href="/categories/index">Category</a>
+              
+              </div>
+            </div>
+          </div>
+        </nav>
+
+	</header>
+	<div class="container" >
+        <div class="pb-3" >
+           <!-- false is written so that there is no need to put title in every view -->
+            @RenderSection("title",false)
+        </div>
+        <div>
+		    @RenderBody()
+        </div>
+	</div
+</body>
+</html>
